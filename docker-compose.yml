@@ -1,0 +1,13 @@
+services:
+  StringSessionBot:
+    build: .
+    environment:
+      ADMINS: $ADMINS
+      API_ID: $API_ID  
+      API_HASH: $API_HASH  
+      BOT_TOKEN: $BOT_TOKEN
+      DATABASE_URI: $DATABASE_URI
+      MUST_JOIN: $MUST_JOIN
+    resources:
+      cpu: 1000m
+      memory: 3Gi
